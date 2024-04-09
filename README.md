@@ -1,4 +1,4 @@
-# pass.in - teste
+# pass.in - testeaaa
 
 O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.
 
