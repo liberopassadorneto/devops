@@ -5,9 +5,10 @@
 replicaCount: 5
 
 image:
-  repository: danielrodriguess/nlw.service.passin
+  repository: liberopneto/nlw.service.passin
   pullPolicy: Always
-  tag: "2359810"
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "2d28522"
   port: 3333
 
 imagePullSecrets: []
@@ -59,40 +60,37 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-resources:
+resources: 
   requests:
     cpu: 200m
-    memory: 512Mi
+    memory: 256Mi
   limits:
     cpu: 400m
     memory: 512Mi
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
 
-startupProbe:
-  httpGet:
-    path: /helthz
-    port: http
-  initialDelaySeconds: 40
-  failureThreshold: 5
-  periodSeconds: 10
-livenessProbe:
-  httpGet:
-    path: /helthz
-    port: http
-  initialDelaySeconds: 60
-  failureThreshold: 5
-  periodSeconds: 10
-readinessProbe:
-  httpGet:
-    path: /helthz
-    port: http
-  initialDelaySeconds: 60
-  failureThreshold: 5
-  periodSeconds: 10
+# livenessProbe:
+#   httpGet:
+#     path: /
+#     port: http
+# readinessProbe:
+#   httpGet:
+#     path: /
+#     port: http
 
 autoscaling:
   enabled: true
   minReplicas: 5
-  maxReplicas: 8
+  maxReplicas: 7
   # targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 75
 
