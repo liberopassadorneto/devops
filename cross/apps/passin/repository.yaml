@@ -10,9 +10,5 @@ stringData:
   url: git@github.com:liberopassadorneto/devops.git
   sshPrivateKey: |
     -----BEGIN OPENSSH PRIVATE KEY-----
-    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-    QyNTUxOQAAACBtSamjcgq2ze0F38Y+QaIYwDx0dOiVK7Q5ObjXkxKxaQAAAJhPB9JUTwfS
-    VAAAAAtzc2gtZWQyNTUxOQAAACBtSamjcgq2ze0F38Y+QaIYwDx0dOiVK7Q5ObjXkxKxaQ
-    AAAEDSKmsRUPjHZnhf7Mz6LqwvrSc+Pmt93k2nDx+B+QaxhW1JqaNyCrbN7QXfxj5BohjA
-    PHR06JUrtDk5uNeTErFpAAAAFWxpYmVyb3BuZXRvQGdtYWlsLmNvbQ==
+    
     -----END OPENSSH PRIVATE KEY-----
