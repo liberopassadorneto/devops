@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: liberopneto/nlw.service.passin
   pullPolicy: Always
-  tag: 673adf3
+  tag: 4f5341d
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
