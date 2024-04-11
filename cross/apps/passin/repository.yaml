@@ -1,16 +1,18 @@
 apiVersion: v1
 kind: Secret
-
 metadata:
   name: private-repo
   namespace: argocd
   labels:
     argocd.argoproj.io/secret-type: repository
-
 stringData:
   type: git
   url: git@github.com:liberopassadorneto/devops.git
   sshPrivateKey: |
     -----BEGIN OPENSSH PRIVATE KEY-----
-    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACCV599BFuZ+pSgxkYO251/Md6ELgfQtYerIvi0PrcvOQgAAAJhjWjd0Y1o3dAAAAAtzc2gtZWQyNTUxOQAAACCV599BFuZ+pSgxkYO251/Md6ELgfQtYerIvi0PrcvOQgAAAEBeNiCWb5OnbBVfQZGBNKXH7AsMjBO5VtqRV94jXurQnJXn30EW5n6lKDGRg7bnX8x3oQuB9C1h6si+LQ+ty85CAAAAFWxpYmVyb3BuZXRvQGdtYWlsLmNvbQ==
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACBtSamjcgq2ze0F38Y+QaIYwDx0dOiVK7Q5ObjXkxKxaQAAAJhPB9JUTwfS
+    VAAAAAtzc2gtZWQyNTUxOQAAACBtSamjcgq2ze0F38Y+QaIYwDx0dOiVK7Q5ObjXkxKxaQ
+    AAAEDSKmsRUPjHZnhf7Mz6LqwvrSc+Pmt93k2nDx+B+QaxhW1JqaNyCrbN7QXfxj5BohjA
+    PHR06JUrtDk5uNeTErFpAAAAFWxpYmVyb3BuZXRvQGdtYWlsLmNvbQ==
     -----END OPENSSH PRIVATE KEY-----
